@@ -59,7 +59,7 @@ selected_correlation = st.sidebar.multiselect(
     default=correlation.index.drop("cnt")
 )
 
-# Tampilkan korelasi yang dipilih
+# Menampilkan korelasi yang dipilih
 if selected_correlation:
     st.bar_chart(correlation[selected_correlation])
 
@@ -85,7 +85,7 @@ selected_hours = st.sidebar.multiselect(
     default=avg_rent_hour.index
 )
 
-# Tampilkan rata-rata peminjaman per jam yang dipilih
+# Menampilkan rata-rata peminjaman per jam yang dipilih
 if selected_hours:
     st.bar_chart(avg_rent_hour[selected_hours])
 
