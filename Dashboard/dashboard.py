@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def load_data():
-    day_df = pd.read_csv("../Data/day.csv")  
-    hour_df = pd.read_csv("../Data/hour.csv")
+    day_df = pd.read_csv("Data/day.csv")
+    hour_df = pd.read_csv("Data/hour.csv")
     
     # Data preprocessing
     day_df.drop(columns=["instant", "casual", "registered"], inplace=True)
